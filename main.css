@@ -8,19 +8,21 @@
 *{
   margin: 0;
   padding: 0;
+	box-sizing: border-box;
 }
 
-/* .back{
-  height: 100hv;
-  weight: 100%;
-  background: url(studentMain-1280.eff23ffa0a.png) 50% 50% no-repeat;
-} */
-
 body{
-  background: url(studentMain.png) no-repeat;
+  background: url(assets/studentMain.png) no-repeat;
+	height: 837px;
+  max-width:100%;
   background-size: 100%;
-  /* background: darkgrey;
-  background-image: url(studentMain.png); */
+
+}
+
+.All_Header_menu{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .Top_Menu li{
@@ -32,9 +34,9 @@ body{
 }
 
 .Logo{
-  width: 59%;
+/*  min-width: 62.07407vw;*/
   font-family: "SB Sans Display Semibold";
-  line-height: 11vh;
+  line-height: 80px;
   text-align: center;
   color: white;
   font-size: 36px;
@@ -52,6 +54,7 @@ body{
 
 #But1{
   user-select: none;
+/*  margin: 1.6296vh 0% 0% 2.370370vw ;*/
   margin: 22px 0px 0px 32px;
   text-align: center;
   font-family: 'Red Rose', serif;
@@ -76,21 +79,24 @@ body{
 }
 
 .ed_menu, .ed_row{
-  /* display: flex;
-  justify-content: start;
-  align-items: center; */
   border-radius: 20px;
-  color: rgb(33, 33, 34);
-  background: #f1f2f6;
-  width: 79.25930001%;
-  height: 275px;
+  max-width: 1070px;
+  max-height: 275px;
 
 }
 
 .ed_menu{
+  color: rgb(33, 33, 34);
+  background: #f1f2f6;
   margin: 0px auto;
   margin-top: 42px;
   overflow: hidden;
+	border: 2px solid red;
+	
+}
+
+.ed_row{
+		
 }
 
 .txt{
@@ -111,13 +117,12 @@ body{
   border-radius: 20px;
   margin: 20px 10px 20px 10px;
   height: 240px;
-  min-width: 210px;
+  width: 210px;
   background: rgb(169,169,195);
   color: #fff;
   display: inline-block;
   font-family: "SB Sans Interface", Arial, Helvetica, sans-serif;
   text-align: start;
-
   background: -webkit-linear-gradient(-250deg, rgb(169,169,195) 0, rgb(169,169,195) 82%, rgb(147,147,180) 82%, rgb(147,147,180) 100%);
   background: -moz-linear-gradient(340deg, rgb(169,169,195) 0, rgb(169,169,195) 82%, rgb(147,147,180) 82%, rgb(147,147,180) 100%);
   background: linear-gradient(340deg, rgb(169,169,195) 0, rgb(169,169,195) 82%, rgb(147,147,180) 82%, rgb(147,147,180) 100%);
@@ -130,13 +135,15 @@ body{
   text-underline-offset: 6px;
   letter-spacing: 1px;
   margin: 20px;
+  width: 210px;
 }
 
-.ed_block span{
+.ed_block p{
   font-size: 1.3em;
   margin: 20px;
+  hyphens: manual;
+  width: 170px;
 }
-
 
 .ed_row{
   display: flex;
@@ -147,15 +154,15 @@ body{
 #But1:hover{
   background: rgb(5,125,255);
   color: #fff;
-  transition: 0.21s linear;
+  transition: 0.1s linear;
 }
 
-#But2 svg:hover{
-  stroke: red;
-  fill: red;
-  /* background: rgb(5,125,255);
+#But2:hover{
+  stroke: #fff;
+  fill: #fff;
+  background: rgb(5,125,255);
   color: #fff;
-  transition: 0.21s linear; */
+  transition: 0.1s linear;
 }
 
 .ed_block: hover{
@@ -164,4 +171,76 @@ body{
 
 #But1:active{
 
+}
+
+#menu_low{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		margin: 0px auto;
+		margin-top: 90px;
+		width: 100%;
+		max-width: 1250px;
+		border: 1px solid red;
+}
+
+#left_block, #right_block{
+		display: flex;
+		flex-wrap: wrap;
+		border: 1px solid green;
+		
+}
+
+#left_block{
+		align-self: start;
+		flex: 0 0 35%;
+		max-width: 35%; 
+		order: 1;
+}
+
+#right_block{
+		flex: 0 0 64%;
+		max-width: 64%;
+		order: 2;
+}
+
+
+.blocks_lower{
+		margin: 0px auto;
+		margin-bottom: 4%;
+		border: 1px solid red;
+		border-radius: 25px;
+}
+
+#right_block .blocks_lower{
+		width: 46%;
+}
+#left_block .blocks_lower{
+		width: 90%;
+}
+@media (max-width: 1200px) {
+		#right_block{
+		flex: 0 0 50%;
+		max-width: 50%;
+		}
+		#left_block{
+		flex: 0 0 50%;
+		max-width: 50%; 
+		}
+		#right_block .blocks_lower{
+		width: 80%;
+		}
+		#left_block .blocks_lower{
+		width: 90%;
+		}
+}	
+
+
+#lb1{
+	overflow: hidden;
+}
+
+#SomeIMG {
+	opacity: 50%;
+  max-width: 100%;
 }
