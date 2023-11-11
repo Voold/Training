@@ -11,12 +11,9 @@
 	box-sizing: border-box;
 }
 
-body{
-  background: url(assets/studentMain.png) no-repeat;
-	height: 837px;
-  max-width:100%;
-  background-size: 100%;
-
+body {
+  background: url(assets/studentMain.png) center center / 100% 100% no-repeat;
+	max-height: 837px;
 }
 
 .All_Header_menu{
@@ -34,7 +31,6 @@ body{
 }
 
 .Logo{
-/*  min-width: 62.07407vw;*/
   font-family: "SB Sans Display Semibold";
   line-height: 80px;
   text-align: center;
@@ -49,44 +45,46 @@ body{
   background: #fff;
   border-radius: 32px;
   cursor: pointer;
-
 }
 
 #But1{
-  user-select: none;
-/*  margin: 1.6296vh 0% 0% 2.370370vw ;*/
-  margin: 22px 0px 0px 32px;
-  text-align: center;
-  font-family: 'Red Rose', serif;
-  line-height: 46px;
-  width: 48px;
-  height: 48px;
-  font-size: 21px;
-  transform: rotate(90deg);
+	user-select: none;
+	margin: 22px 0px 0px 32px;
+	text-align: center;
+	font-family: 'Red Rose', serif;
+	line-height: 46px;
+	width: 48px;
+	height: 48px;
+	font-size: 21px;
+	transform: rotate(90deg);
 }
 
 #But2{
-  user-select: none;
-  margin: 4px;
-  font-family: "SB Sans Interface";
-  display: block;
-  font-size: 15px;
-  line-height: 48px;
-  height: 48px;
-  width: 186px;
-  border-radius: 30px;
-  text-decoration: none;
+	user-select: none;
+	margin: 4px;
+	font-family: "SB Sans Interface";
+	display: block;
+	font-size: 15px;
+	line-height: 48px;
+	height: 48px;
+	width: 186px;
+	border-radius: 30px;
+	text-decoration: none;
 }
 
 .ed_menu, .ed_row{
   border-radius: 20px;
   max-width: 1070px;
   max-height: 275px;
+}
 
+.ph_size{
+	display: inline-block;
+	width: 20px;
+	height: 25px;
 }
 
 .cont_padding{
-/*	border: 1px solid green;*/
 	padding: 0 5%;
 }
 
@@ -94,10 +92,8 @@ body{
   color: rgb(33, 33, 34);
   background: #f1f2f6;
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 20px;
   overflow: hidden;
-/*	border: 2px solid red;*/
-	
 }
 
 .ed_row{
@@ -132,7 +128,6 @@ body{
   background: -moz-linear-gradient(340deg, rgb(169,169,195) 0, rgb(169,169,195) 82%, rgb(147,147,180) 82%, rgb(147,147,180) 100%);
   background: linear-gradient(340deg, rgb(169,169,195) 0, rgb(169,169,195) 82%, rgb(147,147,180) 82%, rgb(147,147,180) 100%);
   background-position: 50% 50%;
-
 }
 
 .ed_block h5{
@@ -170,30 +165,18 @@ body{
   transition: 0.1s linear;
 }
 
-.ed_block: hover{
-
-}
-
-#But1:active{
-
-}
-
 #menu_low{
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-around;
 		margin: 90px auto 0 auto;
-/*		margin-top: 90px;*/
 		width: 100%;
 		max-width: 1250px;
-/*		border: 1px solid red;*/
 }
 
 #left_block, #right_block{
 		display: flex;
 		flex-wrap: wrap;
-/*		border: 1px solid green;*/
-		
 }
 
 #left_block{
@@ -209,10 +192,8 @@ body{
 		order: 2;
 }
 
-
 .blocks_lower{
 		margin: 0 auto 4% auto;
-/*		border: 1px solid red;*/
 		border-radius: 20px;
 		box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.1);
 }
@@ -220,25 +201,10 @@ body{
 #right_block .blocks_lower{
 		width: 46%;
 }
+
 #left_block .blocks_lower{
 		width: 94%;
 }
-@media (max-width: 1200px) {
-		#right_block{
-		flex: 0 0 50%;
-		max-width: 50%;
-		}
-		#left_block{
-		flex: 0 0 50%;
-		max-width: 50%; 
-		}
-		#right_block .blocks_lower{
-		width: 80%;
-		}
-		#left_block .blocks_lower{
-		width: 90%;
-		}
-}	
 
 #rb1, #rb2, #rb3{
 	display: block;
@@ -309,4 +275,99 @@ body{
 .rbBut:hover{
 	background: rgb(5,125,255);
 	transition: 0.1s linear;
+}
+
+.phone_menu{
+	visibility: hidden;
+	color: azure;
+	font-size: 2em;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+		#right_block{
+			flex: 0 0 50%;
+			max-width: 50%;
+		}
+		#left_block{
+			flex: 0 0 50%;
+			max-width: 50%; 
+		}
+		#right_block .blocks_lower{
+			width: 80%;
+		}
+		#left_block .blocks_lower{
+			width: 90%;
+		}
+		.Logo{
+			display: block;
+			font-size: 34px;
+			width: 100%;
+		}
+		#But1{
+			margin: 15px 0px 0px 22px;
+			line-height: 31px;
+			width: 32px;
+			height: 32px;
+			font-size: 14px;
+		}
+
+		#But2{
+			margin: 15px 0px 0px 3px;
+			font-size: 12px;
+			line-height: 32px;
+			height: 32px;
+			width: 134px;
+		}
+		.ph_size{
+			width: 15px;
+			height: 20px;
+		}
+}
+
+
+@media screen and (max-width: 767px) {
+		#right_block{
+			flex: 0 0 100%;
+			max-width: 100%;
+		}
+		#left_block{
+			flex: 0 0 100%;
+			max-width: 100%; 
+		}
+		#right_block .blocks_lower{
+			width: 90%;
+		}
+		#left_block .blocks_lower{
+			width: 90%;
+		}
+		.Logo{
+			display: block;
+			font-size: 26px;
+			width: 100%;
+		}
+		#But1{
+			margin: 15px 0px 0px 22px;
+			line-height: 31px;
+			width: 32px;
+			height: 32px;
+			font-size: 14px;
+		}
+
+		#But2{
+			margin: 15px 0px 0px 3px;
+			font-size: 12px;
+			line-height: 32px;
+			height: 32px;
+			width: 134px;
+		}
+		.ph_size{
+			width: 15px;
+			height: 20px;
+		}
+		.phone_menu{
+			visibility: visible;
+		}
+		.np_menu{
+			display: none;
+		}
 }
