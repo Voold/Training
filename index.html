@@ -13,8 +13,7 @@
         <div class="All_Header_menu">
           <div class="Top_Menu">
             <ul>
-              <li><a href="#" id="But1">|||</a></li> 
-              <!-- <li><a href="#" id="But2"><svg width="20" height="20" viewBox="0 0 20 20"><polyline stroke="black" fill="none" stroke="black" stroke-width="2" points="7 19.5 0 15 7 10.75"/><line fill="none" stroke="black" stroke-width="2" stroke="#000" x1="15" y1="15" x2="0" y2="15"/></svg>Об акселераторе</a></li> -->
+              <li><a onclick="but1(this)" href="#" id="But1">|||</a></li> 
 							<li><a href="#" id="But2"><div class="ph_size"><svg class="ph_size" style="left:-5px;top: +3px;position: relative;"  clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="2 2 20 10" xmlns="http://www.w3.org/2000/svg"><path d="m9.474 5.209s-4.501 4.505-6.254 6.259c-.147.146-.22.338-.22.53s.073.384.22.53c1.752 1.754 6.252 6.257 6.252 6.257.145.145.336.217.527.217.191-.001.383-.074.53-.221.293-.293.294-.766.004-1.057l-4.976-4.976h14.692c.414 0 .75-.336.75-.75s-.336-.75-.75-.75h-14.692l4.978-4.979c.289-.289.287-.761-.006-1.054-.147-.147-.339-.221-.53-.221-.191-.001-.38.071-.525.215z" fill-rule="nonzero"/></svg></div>Об акселераторе</a></li>
             </ul>
           </div>
@@ -27,12 +26,15 @@
       <main>
        <div class="cont_padding">
        		<div class="txt phone_menu" style="display: block;height: 20px;text-align: center;">Программа</div>
+					<div id="navigation">
+					<div id="ButR" onclick="ButRcl(this)"><div class="arrow" style="margin: 7px auto;height: 24px; width: 24px;"><svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m10.211 7.155c-.141-.108-.3-.157-.456-.157-.389 0-.755.306-.755.749v8.501c0 .445.367.75.755.75.157 0 .316-.05.457-.159 1.554-1.203 4.199-3.252 5.498-4.258.184-.142.29-.36.29-.592 0-.23-.107-.449-.291-.591-1.299-1.002-3.945-3.044-5.498-4.243z"/></svg>	</div></div>
+					<div style="visibility: hidden;" id="ButL" onclick="ButLcl(this)"><div class="arrow" style="margin: 7px auto;height: 24px; width: 24px;"><svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m13.789 7.155c.141-.108.3-.157.456-.157.389 0 .755.306.755.749v8.501c0 .445-.367.75-.755.75-.157 0-.316-.05-.457-.159-1.554-1.203-4.199-3.252-5.498-4.258-.184-.142-.29-.36-.29-.592 0-.23.107-.449.291-.591 1.299-1.002 3.945-3.044 5.498-4.243z"/></svg></div></div>
 					<div class="ed_menu">
-						<div class="ed_row">
+						<div id="ed_row">
 							<div class="txt np_menu"><div>Программа</div></div>
 							<div class="ed_block">
 								<h5>МОДУЛЬ 0</h5>
-									<p>От идеи до инве&shy;стиций: введе&shy;ние в предпри&shy;нимательство&shy; 2023</p>
+									<p onclick="testes()">От идеи до инве&shy;стиций: введе&shy;ние в предпри&shy;нимательство&shy; 2023</p>
 							</div>
 							<div class="ed_block">
 								<h5>МОДУЛЬ 1</h5>
@@ -56,9 +58,10 @@
 							</div>
 							<div class="ed_block">
 								<h5>МОДУЛЬ 6</h5>
-								<p>От идеи до инве&shy;стиций: страте&shy;гия выхода на&shy;рынок</p>s
+								<p>От идеи до инве&shy;стиций: страте&shy;гия выхода на&shy;рынок</p>
 							</div>
 						</div>
+					</div>
 					</div>
         </div>
         <div id="menu_low">        	
@@ -87,5 +90,6 @@
 						</div>
         </div>
       </main>
+  <script src="JS/main.js"></script>
   </body>
 </html>
