@@ -100,6 +100,7 @@ body {
 #navigation, #ed_row{
 	margin-top: 0px;
 	overflow: visible;
+	right: 0;
 }
 
 #ButR, #ButL{
