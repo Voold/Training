@@ -10,7 +10,13 @@ function testes() {
 
 
 function but1(el){
+	document.getElementById("But1_menu").style.cssText="visibility: visible";
+	document.getElementById("But1_menu_back").style.cssText="visibility: visible";
+}
 
+function but1_back(){
+	document.getElementById("But1_menu").style.cssText="visibility: hidden";
+	document.getElementById("But1_menu_back").style.cssText="visibility: hidden";
 }
 
 
