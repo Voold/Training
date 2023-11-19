@@ -77,7 +77,7 @@ body {
 	position: fixed;
 	background: grey;
 	opacity: 70%;
-	height: 100vh;
+	height: 120vh;
 	width: 100%;
 	visibility: hidden;
 	z-index: 3;
