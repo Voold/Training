@@ -18,7 +18,7 @@ function checkForm(el){
 	else{
 		alert("Все данные заполнены корректно! Заявка на кредит будет рассмотрена в течении 10 минут!");
 //		window.location = "https://voold.online";
-		window.location = "../pages/index.html";
+		window.location = "../index.html";
 	}
 	return false;
 }

@@ -1,13 +1,14 @@
-export {name};
 var name;
 name = "login";
 
 
-function checkForm(el){
-	var tname = el.name.value;
-	var pass = el.pass.value;
+function Go(el){
+	var tname = document.getElementById("name").value;
+	var pass = document.getElementById("pass").value;
 	
 	var fail = "";
+	
+	el.style.background= "red";
 	
 	if (tname == "" || pass == "")
 		fail="Заполните все поля";
@@ -17,8 +18,10 @@ function checkForm(el){
 	if (fail != "")
 		alert (fail);
 	else{
-		name = document.getElementById("name");
-		window.location = "../pages/index.html";
+		name = tname;
+		alert (name);
+		window.location = "../index.html";
 	}
-	return false;
 }
+
+export {name};
