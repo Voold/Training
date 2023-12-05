@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../styles/form.css">
+	<title>VOOLD autorization</title>
+</head>
+<body>
+<div class="main_form">
+	<img style="margin: 3% 2%; width: 50%" src="../assets/VooldLogo.png" alt="VooldLogo">
+	<div class="auto" style="margin: 0 auto; width: 70%;">
+		<form id="main-form" onsubmit="return checkForm(this)" metod="post">
+			<div class="cont_form"><input class="form" type="text" name="name" placeholder="Логин" id="name"></div><br><br>
+			<div class="cont_form"><input class="form" type="password" name="pass" placeholder="Пароль" id="pass"></div><br><br>
+			<div style="margin: -25px 0 10px 0;"><a href="reg.html" >Регистрация</a></div>
+			<a href="index.html" style="text-decoration: none;"><div class="but_go">Готово</div></a>
+		</form>
+	</div>
+</div>
+<script src="form.js"></script>
+</body>
+</html>

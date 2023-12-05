@@ -1,0 +1,45 @@
+@import url(https://db.onlinewebfonts.com/c/3cff9206b4c8d578245ef1aaeeaf9e84?family=SF+Pro+Display+Bold);
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "SF Pro Display Bold";
+}
+
+body{
+	background: url("../assets/back_for_aut.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.main_form{
+	background: white;
+	border-radius: 15px;
+	border: 1px solid white;
+	position: relative;
+	width: 480px;
+	margin: 12% auto;
+}
+
+.cont_form{
+	margin: 0 auto;
+}
+
+.form{
+	font-size: 1.1em;
+	border-radius: 10px;
+	padding: 5%;
+	width: 89%;
+}
+
+.but_go {
+	text-align: center; 
+	height: 10%;
+	width: 100%;
+	border-radius: 10px;
+	line-height: 45px;
+	color: black;
+	background: rgb(0,135,205);
+	color: white;
+	margin-bottom: 15px;
+}

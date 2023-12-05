@@ -8,6 +8,7 @@ function testes() {
 	alert('test text');
 }
 
+//document.getElementById("UserName").innerHTML = "123";
 
 function but1(el){
 	document.getElementById("But1_menu").style.cssText="visibility: visible";
@@ -44,3 +45,5 @@ function ButLcl(el){
 	else if (step > 0)
 		ed_row.style.cssText="right: +"+step+"px;transition: 0.6s linear;";
 }
+
+
