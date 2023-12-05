@@ -11,8 +11,8 @@ function checkForm(el){
 	
 	if (tname == "" || pass == "")
 		fail="Заполните все поля";
-	else if (tname.length<3 || name.length >50)
-		fail="Длина имени должна быть от 3 до 50 символов";
+	else if (tname.length<3 || tname.length >20)
+		fail="Длина имени должна быть от 3 до 20 символов";
 	
 	if (fail != "")
 		alert (fail);
