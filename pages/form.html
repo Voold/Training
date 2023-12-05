@@ -9,11 +9,11 @@
 <div class="main_form">
 	<img style="margin: 3% 2%; width: 50%" src="../assets/VooldLogo.png" alt="VooldLogo">
 	<div class="auto" style="margin: 0 auto; width: 70%;">
-		<form id="main-form" onsubmit="return checkForm(this)" metod="post">
+		<form id="main-form" onsubmit="return Go(this)" method="post">
 			<div class="cont_form"><input class="form" type="text" name="name" placeholder="Логин" id="name"></div><br><br>
 			<div class="cont_form"><input class="form" type="password" name="pass" placeholder="Пароль" id="pass"></div><br><br>
 			<div style="margin: -25px 0 10px 0;"><a href="reg.html" >Регистрация</a></div>
-			<div onclick="Go(this)" class="but_go">Готово</div>
+			<input  class="but_go"  name="submit" type = "submit" value="Готово">
 		</form>
 	</div>
 </div>
