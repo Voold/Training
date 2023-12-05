@@ -1,5 +1,5 @@
 var name;
-name = "login";
+name = "User Name";
 
 
 function Go(el){
@@ -23,4 +23,5 @@ function Go(el){
 	return false;
 }
 
-export {name};
+
+document.getElementById("UserName").innerHTML = name;
