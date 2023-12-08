@@ -3,7 +3,7 @@ name = "User Name";
 
 
 function Go(el){
-	name = el.name.value;
+	var name = el.name.value;
 	var pass = el.pass.value;
 	
 	var fail = "";
@@ -16,7 +16,8 @@ function Go(el){
 	if (fail != "")
 		alert (fail);
 	else{
-		alert (name);
+		alert ("&&&");
+		window.location = "../index.html";
 		window.location = "../index.html";
 	}
 	
@@ -24,4 +25,4 @@ function Go(el){
 }
 
 
-document.getElementById("UserName").innerHTML = name;
+//document.getElementById("UserName").innerHTML = name;
